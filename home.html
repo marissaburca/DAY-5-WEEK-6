@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      .carousel-item {
+        max-width: 100vw;
+        min-width: 10%;
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR E LINK LIST -->
+      <nav class="navbar navbar-expand-lg px-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/netflix_logo.png" width="150" height="70" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center ms-auto me-3">
+            <i class="bi bi-search me-4"></i>
+            <a class="nav-link me-4 fs-6 text-body-secondary" href="#">KIDS</a>
+            <i class="bi bi-bell-fill me-4"></i>
+            <!-- MENU' A TENDINA PER PROFILO (CHECK PER VISUALIZZAZIONE DISCESA) -->
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/avatar.png" alt="" width="32px" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="profile.html">Edit profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="settings.html">Settings</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- SCELTA DEI GENERI -->
+    <main class="container-expand">
+      <section class="d-flex px-3">
+        <div class="d-flex me-auto p-2">
+          <label class="fs-1 px-2 mt-2"> TV Shows</label>
+          <label
+            class="dropdown-toggle border border-light-subtle text-center p-2 m-3"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </label>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="profile.html">Comedy</a></li>
+            <li><a class="dropdown-item" href="settings.html">Action</a></li>
+            <li><a class="dropdown-item" href="#">Horror</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <div>
+            <i class="bi bi-text-left border px-3 py-1"></i>
+            <i class="bi bi-grid border px-3 py-1"></i>
+          </div>
+        </div>
+      </section>
+      <!-- INIZIO PRIMO CAROUSEL -->
+
+      <div class="row px-4">
+        <p class="fs-4 px-4">Trending Now</p>
+      </div>
+      <section class="d-flex px-1">
+        <div id="carouselExample" class="carousel slide ps-3 mb-5">
+          <div class="carousel-inner text-start pe-0">
+            <div class="carousel-item active text-center">
+              <img src="assets/media/media0.webp" class="d-inline" />
+              <img src="assets/media/media1.jpg" class="d-nline" />
+              <img src="assets/media/media2.webp" class="d-inline" />
+              <img src="assets/media/media3.webp" class="d-inline" />
+              <img src="assets/media/media4.jpg" class="d-inline" />
+              <img src="assets/media/media5.webp" class="d-inline" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="assets/media/media6.jpg" class="d-inline" />
+              <img src="assets/media/media7.webp" class="d-inline" />
+              <img src="assets/media/media8.webp" class="d-inline" />
+              <img src="assets/media/media9.jpg" class="d-inline" />
+              <img src="assets/media/media10.jpg" class="d-inline" />
+              <img src="assets/media/media11.jpg" class="d-inline" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- INIZIO SECONDO CAROUSEL -->
+
+      <div class="row px-4">
+        <p class="fs-4 px-4">Watch It Again</p>
+      </div>
+      <section class="d-flex px-1">
+        <div id="next" class="carousel slide ps-3 mb-5 overflow-x-visible">
+          <div class="carousel-inner text-start pe-0">
+            <div class="carousel-item active text-center">
+              <img src="assets/media/media12.jpg" class="d-inline" />
+              <img src="assets/media/media13.jpg" class="d-nline" />
+              <img src="assets/media/media14.webp" class="d-inline" />
+              <img src="assets/media/media15.jpg" class="d-inline" />
+              <img src="assets/media/media16.webp" class="d-inline" />
+              <img src="assets/media/media17.jpg" class="d-inline" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="assets/media/media18.jpg" class="d-inline" />
+              <img src="assets/media/media19.webp" class="d-inline" />
+              <img src="assets/media/media20.jpg" class="d-inline" />
+              <img src="assets/media/media21.webp" class="d-inline" />
+              <img src="assets/media/media22.webp" class="d-inline" />
+              <img src="assets/media/media23.webp" class="d-inline" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#next"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#next"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--INIZIO TERZO CAROUSEL -->
+
+      <div class="row px-4">
+        <p class="fs-4 px-4">New Releases</p>
+      </div>
+      <section class="d-flex px-1">
+        <div id="one" class="carousel slide ps-3 mb-5">
+          <div class="carousel-inner text-start pe-0">
+            <div class="carousel-item active text-center">
+              <img src="assets/media/media24.jpg" class="d-inline" />
+              <img src="assets/media/media25.webp" class="d-nline" />
+              <img src="assets/media/media26.webp" class="d-inline" />
+              <img src="assets/media/media27.jpg" class="d-inline" />
+              <img src="assets/media/media28.jpg" class="d-inline" />
+              <img src="assets/media/media29.jpg" class="d-inline" />
+            </div>
+            <div class="carousel-item text-center">
+              <img src="assets/media/media30.jpg" class="d-inline" />
+              <img src="assets/media/media31.webp" class="d-inline" />
+              <img src="assets/media/media32.jpg" class="d-inline" />
+              <img src="assets/media/media17.jpg" class="d-inline" />
+              <img src="assets/media/media18.jpg" class="d-inline" />
+              <img src="assets/media/media19.webp" class="d-inline" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#one"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#one"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="pb-3 text-secondary">
+      <div class="container px-lg-3 px-xxl-5 lh-lg">
+        <div class="d-flex mb-2">
+          <a href="#" class="text-secondary"
+            ><i class="bi bi-facebook fs-4 me-3"></i
+          ></a>
+          <a href="#" class="text-secondary"
+            ><i class="bi bi-instagram fs-4 me-3"></i
+          ></a>
+          <a href="#" class="text-secondary"
+            ><i class="bi bi-twitter fs-4 me-3"></i
+          ></a>
+          <a href="#" class="text-secondary"
+            ><i class="bi bi-youtube fs-4 me-3"></i
+          ></a>
+        </div>
+        <div class="row mb-3">
+          <div class="col-3">
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Audio and Subtitles</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Media Center</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Privacy</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Contact Us</a
+              >
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Audio Description</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Investor Relations</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Legal Notices</a
+              >
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Help Center</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Jobs</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="fs-8 text-secondary text-decoration-none"
+                >Cokie preferences</a
+              >
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="mb-0">
+              <a href="" class="fs-8 text-secondary text-decoration-none"
+                >Gift Cards</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="" class="fs-8 text-secondary text-decoration-none"
+                >Term of Use</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="" class="fs-8 text-secondary text-decoration-none"
+                >Corporate Information</a
+              >
+            </p>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn border border-1 text-secondary fs-5 mb-2"
+        >
+          Service code
+        </button>
+        <p class="fs-9 text-secondary">
+          &copy; 1997-2019 Netflix Inc.(i-0d0f6fkd7f8djfv8)
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid py-4">
+      <img src="assets/netflix_logo.png" width="150" height="70" />
+    </div>
+    <div class="d-flex justify-content-center w-100">
+      <div>
+        <p class="display-2">Edit Profile</p>
+        <hr />
+        <div class="d-flex pe-5">
+          <div class="me-3">
+            <div class="col-2">
+              <img src="assets/avatar.png" alt="avavatar" width="120px" />
+
+              <span
+                class="position-absolute bottom-0 start-0 ms-3 mt4 translate-middle badge rounded-pill bg-black"
+              >
+                <i class="bi bi-pencil-fill"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="bg-secondary">
+              <p class="fs-5 ps-3">Strive Student</p>
+            </div>
+            <p class="mb-0 fs-5 text-white-50">Language:</p>
+            <div class="dropdown">
+              <span
+                class="border border-white text-white dropdown-toggle px-3"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </span>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+              </ul>
+            </div>
+            <hr />
+            <p class="mb-3 fs-5 text-white-50">Maturity Settings:</p>
+            <div class="bg-secondary text-white fs-6 p-2 d-inline-block mb-3">
+              ALL MATURITY RATINGS
+            </div>
+            <p class="fs-6">
+              Show titles of all maturity ratings for this profile.
+            </p>
+            <span type="button" class="border text-white-50 px-4 py-2"
+              >EDIT</span
+            >
+            <hr />
+            <p>Autoplay controls</p>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="autoNext" />
+              <label class="form-check-label fs-7" for="autoNext"
+                >Autoplay next episode in a series on all devices.</label
+              >
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="autoPrev" />
+              <label class="form-check-label fs-7" for="autoPrev"
+                >Autoplay previews while browsing on all devices.</label
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex">
+          <a
+            type="button"
+            class="border text-decoration-none text-black bg-white py-1 px-4 me-4 fs-5 active"
+            href="home.html"
+            >SAVE</a
+          >
+          <span type="button" class="border text-white-50 py-1 px-4 me-4 fs-5"
+            >CANCEL</span
+          >
+          <span type="button" class="border text-white-50 py-1 px-4 me-4 fs-5"
+            >DELETE PROFILE</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
